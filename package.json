@@ -10,18 +10,32 @@
     "dev": "tsx watch src/index.ts",
     "format": "prettier --write .",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "db": "sqlite3 db/lite.db < db/init.sql",
+    "gen-db": "sqlite3 db/lite.db < db/gen.sql"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@eslint/js": "^9.39.1",
-    "express": "^5.2.1"
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "@vladmandic/face-api": "^1.7.15",
+    "aedes": "^0.51.3",
+    "better-sqlite3": "^12.5.0",
+    "canvas": "^3.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "mqtt": "^5.14.1",
+    "ws": "^8.18.3"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^24.10.1",
+    "@types/ws": "^8.18.1",
     "@vitest/eslint-plugin": "^1.5.1",
     "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
